@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_medium"
+        android:layout_margin="10dp"
+        android:background="@color/ui_field_background"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:elevation="10dp"
+        android:textColor="@color/available_background"
+        android:text="Nothing to show!" />
+</LinearLayout>

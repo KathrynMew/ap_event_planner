@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/layout_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".FragmentAlarmPicker">
+
+    <TextView
+        android:id="@+id/setAlarmTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:background="@color/ui_field_background"
+        android:elevation="10dp"
+        android:fontFamily="@font/lexend_medium"
+        android:text="Event Alarm: "
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/tyrian_purple"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/setAlarmDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#F1D0FF"
+            android:text="Set Date"
+            android:textAlignment="center"
+            android:textColor="#590E78"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/setAlarmTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="#F1D0FF"
+            android:text="Set Time"
+            android:textAlignment="center"
+            android:textColor="#590E78"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/setAlarmDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#F1D0FF"
+            android:text="Set Duration"
+            android:textAlignment="center"
+            android:textColor="#590E78"
+            app:cornerRadius="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/displayAlarmTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginVertical="10dp"
+            android:paddingVertical="3dp"
+            android:background="@color/ui_field_background"
+            android:elevation="10dp"
+            android:fontFamily="@font/lexend_medium"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/tyrian_purple"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/displayAlarmFreq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginVertical="10dp"
+            android:paddingVertical="3dp"
+            android:background="@color/ui_field_background"
+            android:elevation="10dp"
+            android:fontFamily="@font/lexend_medium"
+            android:gravity="center"
+            android:textColor="@color/tyrian_purple"
+            android:text=""
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/setAlarmMessage"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#F2D4FF"
+        android:fontFamily="@font/lexend_medium"
+        android:hint="Add Custom Notification Message Here!"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLength="40"
+        android:textAlignment="center"
+        android:textColor="@color/tyrian_purple"
+        android:textColorHint="#A64DDD"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/cancelAlarmButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:contentDescription="Set Alarm"
+            android:src="@drawable/sharp_cancel_24"
+            app:maxImageSize="50dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/setAlarmButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:contentDescription="Set Alarm"
+            android:src="@drawable/create_alarm"
+            app:maxImageSize="50dp" />
+    </LinearLayout>
+
+</LinearLayout>

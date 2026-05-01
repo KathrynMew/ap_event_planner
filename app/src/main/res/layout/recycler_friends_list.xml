@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/ui_field_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/viewFriendProfileButton"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="@color/ui_field_background"
+            android:contentDescription="view friend"
+            android:src="@drawable/icon_view_friend" />
+
+        <TextView
+            android:id="@+id/friendTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:layout_marginVertical="4dp"
+            android:background="@color/tyrian_purple"
+            android:fontFamily="@font/lexend_medium"
+            android:lineSpacingExtra="2dp"
+            android:padding="10dp"
+            android:shadowColor="@color/gold_shadow"
+            android:shadowRadius="15"
+            android:text="Kollux Apollonia\n@kollux"
+            android:textAlignment="viewStart"
+            android:textColor="@color/school_text"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/CasualTag"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/casual_background"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/SchoolTag"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/gold_shadow"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/WorkTag"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#033063"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/OnlineTag"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/online_background"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/removeFriendButton"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:contentDescription="remove friend"
+            android:src="@drawable/icon_remove_friend" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>

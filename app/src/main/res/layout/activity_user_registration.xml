@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".UserRegistration">
+
+    <TextView
+        style="@style/ScreenTitle"
+        android:paddingVertical="5dp"
+        android:text="Sign Up" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/sectionHeader"
+            android:text="full name" />
+
+        <EditText
+            android:id="@+id/editFullName"
+            android:hint="Enter Full Name"
+            style="@style/user_input_text" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            style="@style/sectionHeader"
+            android:text="your birthday" />
+
+        <DatePicker
+            android:id="@+id/BirthDatePicker"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/ui_field_background"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+        <TextView
+            android:id="@+id/showAge"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/lexend_medium"
+            android:background="#257129"
+            android:textColor="@color/ui_field_background" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:text="username"
+            style="@style/sectionHeader" />
+
+        <EditText
+            android:id="@+id/editUsername"
+            style="@style/user_input_text"
+            android:hint="Length: at least 5" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            style="@style/sectionHeader"
+            android:text="password" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            style="@style/user_input_password"
+            android:hint="Length: at least 8\nMust contain a number"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+    <Button
+        android:id="@+id/submitInfoButton"
+        style="@style/navigationButtonStyle"
+        android:layout_marginVertical="10dp"
+        android:text="Register"
+        app:cornerRadius="1dp" />
+
+</LinearLayout>

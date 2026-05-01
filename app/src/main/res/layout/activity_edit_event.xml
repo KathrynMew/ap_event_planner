@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".EditEvent">
+
+    <TextView
+        style="@style/ScreenTitle"
+        android:paddingVertical="5dp"
+        android:text="edit event" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/chooseEventName"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/tyrian_purple"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"
+            android:drawableTint="@color/gold_shadow"
+            android:fontFamily="@font/lexend_medium"
+            android:gravity="center"
+            android:text="Change Event Name"
+            android:textColor="@color/school_text"
+            android:textSize="14sp"
+            app:cornerRadius="1dp" />
+
+        <Button
+            android:id="@+id/chooseEventDate"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/tyrian_purple"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"
+            android:drawableTint="@color/gold_shadow"
+            android:fontFamily="@font/lexend_medium"
+            android:gravity="center"
+            android:text="Change Event Date"
+            android:textColor="@color/school_text"
+            android:textSize="14sp"
+            app:cornerRadius="1dp" />
+
+        <Button
+            android:id="@+id/chooseEventStart"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/tyrian_purple"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"
+            android:drawableTint="@color/gold_shadow"
+            android:fontFamily="@font/lexend_medium"
+            android:gravity="center"
+            android:text="Change Event Start Time"
+            android:textColor="@color/school_text"
+            android:textSize="14sp"
+            app:cornerRadius="1dp" />
+
+        <Button
+            android:id="@+id/chooseEventEnd"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/tyrian_purple"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"
+            android:drawableTint="@color/gold_shadow"
+            android:fontFamily="@font/lexend_medium"
+            android:gravity="center"
+            android:text="Change Event End Time"
+            android:textColor="@color/school_text"
+            android:textSize="14sp"
+            app:cornerRadius="1dp" />
+
+        <Button
+            android:id="@+id/chooseEventInvitees"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/tyrian_purple"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"
+            android:drawableTint="@color/gold_shadow"
+            android:fontFamily="@font/lexend_medium"
+            android:gravity="center"
+            android:text="Edit Event Invitees"
+            android:textColor="@color/school_text"
+            android:textSize="14sp"
+            app:cornerRadius="1dp" />
+
+        <Button
+            android:id="@+id/chooseEventLocation"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/tyrian_purple"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"
+            android:drawableTint="@color/gold_shadow"
+            android:fontFamily="@font/lexend_medium"
+            android:gravity="center"
+            android:text="Change Event Location"
+            android:textColor="@color/school_text"
+            android:textSize="14sp"
+            app:cornerRadius="1dp" />
+
+        <Button
+            android:id="@+id/chooseEventNote"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/tyrian_purple"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"
+            android:drawableTint="@color/gold_shadow"
+            android:fontFamily="@font/lexend_medium"
+            android:gravity="center"
+            android:text="Edit Event Notes"
+            android:textColor="@color/school_text"
+            android:textSize="14sp"
+            app:cornerRadius="1dp" />
+    </LinearLayout>
+
+</LinearLayout>

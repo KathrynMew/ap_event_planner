@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/layout_background"
+    android:orientation="vertical"
+    tools:context=".Friends">
+
+    <TextView
+        style="@style/ScreenTitle"
+        android:paddingVertical="5dp"
+        android:text="@string/friends_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:drawableTop="@drawable/person_add"
+            android:drawableTint="@color/tyrian_purple"
+            android:drawableTintMode="src_atop"
+            android:fontFamily="@font/lexend_medium"
+            android:text="@string/add_friend"
+            android:textColor="@color/tyrian_purple"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/viewRequests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:drawableTop="@android:drawable/ic_dialog_email"
+            android:drawableTint="@color/tyrian_purple"
+            android:fontFamily="@font/lexend_medium"
+            android:text="@string/requests"
+            android:textColor="@color/tyrian_purple"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/viewGroups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:drawableTop="@drawable/ic_view_groups"
+            android:drawableTint="@color/tyrian_purple"
+            android:fontFamily="@font/lexend_medium"
+            android:text="@string/my_groups"
+            android:textColor="@color/tyrian_purple"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:text="relation"
+        style="@style/match_parent_sectionHeader" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="?android:attr/listDivider" />
+
+    <RadioGroup
+        android:id="@+id/relationTypeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ui_field_background"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radiobuttonAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/lexend_medium"
+            android:text="@string/any_choice"
+            android:checked="true"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/radiobuttonCasual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/lexend_medium"
+            android:text="@string/casual_choice"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/radiobuttonSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/lexend_medium"
+            android:text="@string/school_choice"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/radiobuttonWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/lexend_medium"
+            android:text="@string/work_choice"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/radiobuttonOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/lexend_medium"
+            android:text="@string/online_choice"
+            android:textSize="13sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/CasualTag"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            android:background="@color/casual_background"
+            android:contentDescription="@string/casual_choice"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/SchoolTag"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            android:background="@color/gold_shadow"
+            android:contentDescription="@string/school_choice"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/WorkTag"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            android:background="#033063"
+            android:contentDescription="@string/work_choice"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/OnlineTag"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            android:background="@color/online_background"
+            android:contentDescription="@string/online_choice"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noResultsFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_medium"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@color/ui_field_background"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:elevation="10dp"
+        android:textColor="@color/available_background"
+        android:text="Nothing to show!"
+        android:visibility="visible"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewFriends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="navigationButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">#388E3C</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="sectionHeader">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/tyrian_purple</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/gold_shadow</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="user_select_date">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/ui_field_background</item>
+        <item name="android:textColor">@color/tyrian_purple</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="user_input_text">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:background">@color/ui_field_background</item>
+        <item name="android:textColor">@color/tyrian_purple</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+
+    <style name="user_input_password">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+        <item name="android:background">@color/ui_field_background</item>
+        <item name="android:textColor">@color/tyrian_purple</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+
+    <style name="ScreenTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:letterSpacing">0.4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/gold_shadow</item>
+        <item name="android:shadowRadius">20</item>
+        <item name="android:textColor">@color/tyrian_purple</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+    </style>
+
+    <style name="hintNote">
+        <item name="android:layout_width">310dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="checkboxStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:checked">false</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+    </style>
+
+    <style name="match_parent_sectionHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/tyrian_purple</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+        <item name="android:letterSpacing">0.5</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/gold_shadow</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

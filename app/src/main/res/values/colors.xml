@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="layout_background">#C1EB91</color>
+    <color name="navigation_button_background">#388D3C</color>
+    <color name="tyrian_purple">#630330</color>
+    <color name="gold_shadow">#FFCA28</color>
+    <color name="ui_field_background">#D7F6B3</color>
+    <color name="work_background">#030863</color>
+    <color name="work_text">#C8DEFF</color>
+    <color name="not_available_text">#FFACAC</color>
+    <color name="not_available_background">#830505</color>
+    <color name="available_text">#A8FF91</color>
+    <color name="available_background">#095E04</color>
+    <color name="personal_event_background">#07594B</color>
+    <color name="personal_event_text">#BAFFF3</color>
+    <color name="casual_background">#530583</color>
+    <color name="casual_text">#E6ACFF</color>
+    <color name="school_background">#837D05</color>
+    <color name="school_text">#FCFFAC</color>
+    <color name="online_text">#C9FFAC</color>
+    <color name="online_background">#834005</color>
+
+</resources>

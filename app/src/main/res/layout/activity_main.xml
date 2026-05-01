@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tyrian_purple"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/lexend_medium"
+        android:shadowColor="@color/gold_shadow"
+        android:shadowRadius="18"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="KomosForge"
+        android:textColor="@color/school_text"
+        android:textAlignment="center"
+        android:textSize="48sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_weight="1"
+        android:contentDescription="app_logo"
+        android:cropToPadding="true"
+        android:foreground="@drawable/frame_icon_komos"
+        android:foregroundGravity="center"
+        android:scaleType="center"
+        android:src="@drawable/komosforge_icon"
+        app:tint="@color/gold_shadow"
+        app:tintMode="multiply"/>
+
+    <Button
+        android:id="@+id/goToLoginButton"
+        android:text="Sign In"
+        app:cornerRadius="5dp"
+        style="@style/navigationButtonStyle"
+        android:layout_marginVertical="10dp"/>
+
+    <Button
+        android:id="@+id/goToRegisterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:shadowColor="@color/gold_shadow"
+        android:shadowRadius="13"
+        android:text="New user? Tap here to REGISTER!"
+        android:textColor="@color/school_text"
+        android:textSize="20sp" />
+
+</LinearLayout>

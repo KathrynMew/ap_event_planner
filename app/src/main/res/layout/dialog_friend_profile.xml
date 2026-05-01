@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/layout_background"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/tyrian_purple">
+
+        <ImageView
+            android:id="@+id/userProfilePicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Profile Picture"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/komosforge_icon" />
+
+        <TextView
+            android:id="@+id/displayFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@id/userProfilePicture"
+            android:fontFamily="@font/lexend_medium"
+            android:shadowColor="@color/gold_shadow"
+            android:shadowRadius="13"
+            android:text="Komos Dionysios"
+            android:textAlignment="center"
+            android:textColor="@color/school_text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/displayUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/displayFullName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/userProfilePicture"
+            android:fontFamily="@font/lexend_medium"
+            android:shadowColor="#28FF89"
+            android:shadowRadius="10"
+            android:text="ThePartyPlanner"
+            android:textAlignment="center"
+            android:textColor="@color/available_text"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/ui_field_background"
+        android:elevation="20dp"
+        android:fontFamily="@font/lexend_medium"
+        android:paddingTop="3dp"
+        android:paddingHorizontal="7dp"
+        android:text="About Me"
+        android:textColor="@color/tyrian_purple"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/displayAboutMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/ui_field_background"
+        android:drawableTint="#89B187"
+        android:elevation="20dp"
+        android:fontFamily="@font/lexend_medium"
+        android:isScrollContainer="true"
+        android:maxHeight="100dp"
+        android:padding="5dp"
+        android:text="Who am I? Well, I do not know."
+        android:textColor="@color/available_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/displayReportEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:clickable="true"
+            app:cardBackgroundColor="#045B5E"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/event_view"
+                    app:tint="#C7FFF2" />
+
+                <TextView
+                    android:id="@+id/displayNumberOfEvents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/lexend_medium"
+                    android:text="1000"
+                    android:textSize="16sp"
+                    android:textColor="@color/gold_shadow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lexend_medium"
+                    android:text="Events"
+                    android:textColor="#C7FFF2" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/displayReportFriends"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/available_background"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/baseline_person_24"
+                    app:tint="#C9FFBA" />
+
+                <TextView
+                    android:id="@+id/displayNumberOfFriends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/lexend_medium"
+                    android:text="156"
+                    android:textSize="16sp"
+                    android:textColor="@color/gold_shadow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lexend_medium"
+                    android:text="Friends"
+                    android:textColor="#C9FFBA" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/displayReportGroups"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:clickable="true"
+            app:cardBackgroundColor="#04375E"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_view_groups"
+                    app:tint="#C7ECFF" />
+
+                <TextView
+                    android:id="@+id/displayNumberOfGroups"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="5dp"
+                    android:fontFamily="@font/lexend_medium"
+                    android:text="12"
+                    android:textColor="@color/gold_shadow"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lexend_medium"
+                    android:text="Groups"
+                    android:textColor="#C7ECFF" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/layout_background"
+    android:orientation="vertical"
+    tools:context=".Events">
+
+    <TextView
+        style="@style/ScreenTitle"
+        android:paddingVertical="5dp"
+        android:text="Events" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/sectionHeader"
+                android:text="select a day to view" />
+
+            <CalendarView
+                android:id="@+id/filterCalendarView"
+                android:layout_width="300dp"
+                android:layout_height="310dp"
+                android:background="@color/ui_field_background" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tyrian_purple"
+                android:fontFamily="@font/lexend_medium"
+                android:letterSpacing="0.5"
+                android:text="friends by tag"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/gold_shadow"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkboxNone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/ui_field_background"
+                    android:checked="true"
+                    android:fontFamily="@font/lexend_medium"
+                    android:text="None"
+                    android:textSize="13sp" />
+
+                <CheckBox
+                    android:id="@+id/checkboxCasual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/ui_field_background"
+                    android:fontFamily="@font/lexend_medium"
+                    android:text="Casual"
+                    android:textSize="13sp" />
+
+                <CheckBox
+                    android:id="@+id/checkboxWork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/ui_field_background"
+                    android:fontFamily="@font/lexend_medium"
+                    android:text="Work"
+                    android:textSize="13sp" />
+
+                <CheckBox
+                    android:id="@+id/checkboxSchool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/ui_field_background"
+                    android:fontFamily="@font/lexend_medium"
+                    android:text="School"
+                    android:textSize="13sp" />
+
+                <CheckBox
+                    android:id="@+id/checkboxOnline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/ui_field_background"
+                    android:fontFamily="@font/lexend_medium"
+                    android:text="Online"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkboxOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lexend_medium"
+                    android:text="Group:" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/displayGroupsSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/ui_field_background"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="?android:attr/listDivider" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewFriends"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tyrian_purple"
+                android:fontFamily="@font/lexend_medium"
+                android:letterSpacing="0.5"
+                android:text="who is busy?"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/gold_shadow"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/noResultsEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lexend_medium"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@color/ui_field_background"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:elevation="10dp"
+                android:textColor="@color/available_background"
+                android:text="Looks like we're all free!"
+                android:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="?android:attr/listDivider" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@color/tyrian_purple"
+                android:buttonTint="@color/gold_shadow"
+                android:fontFamily="@font/lexend_medium"
+                android:letterSpacing="0.15"
+                android:paddingHorizontal="5dp"
+                android:text="Apply time filter"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/gold_shadow"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/dialogEventsTimeFilter"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@color/ui_field_background"
+                android:clickable="true"
+                android:fontFamily="@font/lexend_medium"
+                android:gravity="center"
+                android:hint="Tap here to select a time!"
+                android:onClick="onClickSelectTimeFilter"
+                android:paddingVertical="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/tyrian_purple"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonSetFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/tyrian_purple"
+                android:onClick="onClickFilter"
+                android:shadowColor="@color/gold_shadow"
+                android:shadowRadius="20"
+                android:text="Filter"
+                android:textColor="@color/school_text"
+                android:textSize="17sp"
+                app:cornerRadius="7dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="?android:attr/listDivider" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+    <Button
+        android:id="@+id/buttonCreateEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/add_new_event"
+        android:drawableTint="@color/tyrian_purple"
+        android:drawableTintMode="src_atop"
+        android:fontFamily="@font/lexend_medium"
+        android:text="New Event"
+        android:textColor="@color/tyrian_purple"
+        android:textSize="13sp" />
+
+</LinearLayout>

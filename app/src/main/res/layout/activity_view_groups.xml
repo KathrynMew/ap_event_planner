@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/layout_background"
+    android:gravity="center_horizontal"
+    tools:context=".Groups">
+
+    <TextView
+        style="@style/ScreenTitle"
+        android:paddingVertical="5dp"
+        android:text="Groups" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/noResultsGroups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_medium"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@color/ui_field_background"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:elevation="10dp"
+        android:textColor="@color/available_background"
+        android:text="Nothing to show!"
+        android:visibility="visible"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/displayGroupsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+    <Button
+        android:id="@+id/buttonCreateGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/create_group"
+        android:drawableTint="@color/tyrian_purple"
+        android:drawableTintMode="src_atop"
+        android:fontFamily="@font/lexend_medium"
+        android:text="New Group"
+        android:textColor="@color/tyrian_purple"
+        android:textSize="13sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+</LinearLayout>

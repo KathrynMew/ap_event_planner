@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/displayGroupNameList"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/tyrian_purple"
+        android:drawableEnd="@drawable/baseline_navigate_next_24"
+        android:drawableTint="@color/gold_shadow"
+        android:fontFamily="@font/lexend_medium"
+        android:gravity="center"
+        android:elevation="10dp"
+        android:text="Group Name"
+        android:textColor="@color/school_text"
+        android:textSize="14sp"
+        app:cornerRadius="1dp" />
+
+</LinearLayout>

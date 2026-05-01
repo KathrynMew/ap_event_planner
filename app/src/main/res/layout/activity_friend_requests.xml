@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/layout_background"
+    tools:context=".FriendRequests">
+
+    <TextView
+        style="@style/ScreenTitle"
+        android:paddingVertical="5dp"
+        android:text="Requests" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lexend_medium"
+        android:background="#0D0363"
+        android:textColor="@color/gold_shadow"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:letterSpacing="0.5"
+        android:text="incoming" />
+
+    <TextView
+        android:id="@+id/noResultsIncoming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_medium"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@color/ui_field_background"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:elevation="10dp"
+        android:textColor="@color/available_background"
+        android:text="Nothing to show!"
+        android:visibility="visible"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewIncomingRequests"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lexend_medium"
+        android:background="#05512E"
+        android:textColor="@color/gold_shadow"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:letterSpacing="0.5"
+        android:text="outgoing" />
+
+    <TextView
+        android:id="@+id/noResultsOutgoing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_medium"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@color/ui_field_background"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:elevation="10dp"
+        android:textColor="@color/available_background"
+        android:text="Nothing to show!"
+        android:visibility="visible"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewOutgoingRequests"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

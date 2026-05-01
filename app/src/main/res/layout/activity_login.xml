@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:paddingBottom="40dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@mipmap/app_icon_background"
+        app:tint="#D2FF9E"
+        app:tintMode="multiply" />
+
+    <TextView
+        style="@style/sectionHeader"
+        android:backgroundTint="#EF00E3"
+        android:backgroundTintMode="multiply"
+        android:elevation="20dp"
+        android:text="username" />
+
+    <EditText
+        android:id="@+id/editLoginUsername"
+        style="@style/user_input_text"
+        android:elevation="20dp"
+        android:hint="@string/hint_enter_username" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        style="@style/sectionHeader"
+        android:backgroundTint="#EF00E3"
+        android:backgroundTintMode="multiply"
+        android:elevation="20dp"
+        android:text="password" />
+
+    <EditText
+        android:id="@+id/editLoginPassword"
+        style="@style/user_input_password"
+        android:elevation="20dp"
+        android:hint="Enter Password" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/goToHomeButton"
+        style="@style/navigationButtonStyle"
+        android:text="Login"
+        app:cornerRadius="1dp" />
+
+</LinearLayout>

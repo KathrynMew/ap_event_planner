@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Komos</string>
+    <string name="hint_enter_username">Enter Username</string>
+    <string name="prompt_display_age">What\'s Your Age? (Based on Year)</string>
+    <string name="state_unavailable">unavailable</string>
+    <string name="title_activity_groups">Groups</string>
+    <string name="events_title">Events</string>
+    <string name="friends_title">Friends</string>
+    <string name="add_friend">Add Friend</string>
+    <string name="requests">Requests</string>
+    <string name="my_groups">My Groups</string>
+
+    <string name="any_choice">Any</string>
+    <string name="casual_choice">Casual</string>
+    <string name="school_choice">School</string>
+    <string name="work_choice">Work</string>
+    <string name="online_choice">Online</string>
+    <string name="none_choice">None</string>
+
+    <string name="unfilter_button">Unfilter</string>
+    <string name="filter_button">Filter</string>
+    <string name="signup">Sign Up</string>
+    <string name="newAttempt">Try Again</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="hint_about_me">Tell your friends about yourself!</string>
+    <string name="hint_change_name">Enter New Event Name</string>
+    <string name="hint_change_location">Optional!</string>
+    <string name="hint_change_notes">Anything guests should know?\ni.e. dress code, budget, transportation, medical precautions. Can include links!</string>
+</resources>

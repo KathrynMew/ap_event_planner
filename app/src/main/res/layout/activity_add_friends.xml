@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".AddFriends">
+
+    <TextView
+        style="@style/ScreenTitle"
+        android:paddingVertical="5dp"
+        android:text="add friend" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editSearchFriend"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/ui_field_background"
+            android:fontFamily="@font/lexend_medium"
+            android:hint="Search"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:padding="10dp"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/applySearchButton"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="@color/ui_field_background"
+            android:scaleType="fitCenter"
+            android:contentDescription="search person"
+            android:src="@drawable/baseline_person_search_24" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noResultsSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_medium"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@color/ui_field_background"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:elevation="10dp"
+        android:textColor="@color/available_background"
+        android:text="Nothing to show!"
+        android:visibility="visible"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/displayPossibleMatches"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        style="@style/match_parent_sectionHeader"
+        android:layout_marginTop="20dp"
+        android:text="relation tags" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/casualFriendTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@color/ui_field_background"
+            android:fontFamily="@font/lexend_medium"
+            android:text="Casual" />
+
+        <CheckBox
+            android:id="@+id/schoolFriendTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@color/ui_field_background"
+            android:fontFamily="@font/lexend_medium"
+            android:text="School" />
+
+        <CheckBox
+            android:id="@+id/workFriendTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/ui_field_background"
+            android:fontFamily="@font/lexend_medium"
+            android:text="Work" />
+
+        <CheckBox
+            android:id="@+id/onlineFriendTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@color/ui_field_background"
+            android:fontFamily="@font/lexend_medium"
+            android:text="Online" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+    <Button
+        android:id="@+id/buttonAddFriend"
+        style="@style/navigationButtonStyle"
+        android:layout_marginVertical="10dp"
+        android:text="Send Request"
+        app:cornerRadius="1dp" />
+
+</LinearLayout>
